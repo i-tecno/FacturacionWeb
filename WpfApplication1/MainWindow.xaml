@@ -8,7 +8,7 @@
         Title="MainWindow" Height="233.601" Width="439.105">
     <Grid>
         <GroupBox x:Name="groupBox" Header="Crear Productos" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="182" Width="415">
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="295,43,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="297,21,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
         </GroupBox>
         <TextBox x:Name="txtcodigo" HorizontalAlignment="Left" Height="23" Margin="115,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox_TextChanged"/>
         <TextBox x:Name="txtdescripcion" HorizontalAlignment="Left" Height="23" Margin="115,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="302"/>

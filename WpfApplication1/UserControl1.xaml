@@ -1,0 +1,101 @@
+﻿<UserControl x:Class="WpfApplication1.UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:WpfApplication1"
+             mc:Ignorable="d" Width="1022" Height="766">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <GroupBox x:Name="groupBox3" Header="Conceptos Factura" HorizontalAlignment="Left" Height="130" Margin="10,318,0,0" VerticalAlignment="Top" Width="1002"/>
+        <GroupBox x:Name="groupBox1" Header="CFDI" HorizontalAlignment="Right" Height="58" Margin="0,26,9,0" VerticalAlignment="Top" Width="240"/>
+        <GroupBox x:Name="groupBox" Header="Datos Receptor" Margin="10,76,10,0" Height="142" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtrazonsocial" Height="23" Margin="265,43,254,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="País" HorizontalAlignment="Left" Margin="14.467,92.1,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="RFC" HorizontalAlignment="Left" Margin="14.467,18.09,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.906,1.311"/>
+        <Label x:Name="label_Copy1" Content="Razon Social" HorizontalAlignment="Left" Margin="264.517,17.05,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy2" Content="Estado" HorizontalAlignment="Left" Margin="139.467,92.1,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbrfc" HorizontalAlignment="Left" Margin="14.467,44.05,0,0" Width="245" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy3" Content="Municipio" HorizontalAlignment="Left" Margin="264.467,92.1,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtmunicipio" Height="23" Margin="264.467,118.06,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="label_Copy4" Content="Ciudad" HorizontalAlignment="Left" Margin="389.467,92.1,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtciudad" Height="23" Margin="389.467,118.06,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="label_Copy5" Content="Colonia" HorizontalAlignment="Right" Margin="0,92.1,457.333,0" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+        <TextBox x:Name="txtcolonia" Height="23" Margin="0,118.06,387.533,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="120"/>
+        <Label x:Name="label_Copy6" Content="Calle" HorizontalAlignment="Right" Margin="0,92.1,346.906,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtcalle" Height="23" Margin="0,118.06,22.533,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="360"/>
+        <TextBox x:Name="txtnoexterior" Height="23" Margin="14.517,172.02,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="label_Copy7" Content="No. Exterior" HorizontalAlignment="Left" Margin="14.517,146.06,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtnointerior" Height="23" Margin="139.517,172.02,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="label_Copy8" Content="No. Interior" HorizontalAlignment="Left" Margin="139.517,146.06,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtcp" Height="23" Margin="264.517,172.02,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="label_Copy9" Content="C.P." HorizontalAlignment="Left" Margin="264.467,146.06,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtemail" Height="23" Margin="389.517,172.02,387.533,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy10" Content="Email" HorizontalAlignment="Left" Margin="389.517,146.06,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtreferencia" Height="23" Margin="0,172.02,22.533,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Right" Width="360"/>
+        <Label x:Name="label_Copy11" Content="Referencia" HorizontalAlignment="Right" Margin="0,146.06,317.599,0" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+        <TextBox x:Name="txtfolio" HorizontalAlignment="Right" Margin="0,43.01,22.533,0" TextWrapping="Wrap" Width="61.906" Height="23" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy12" Content="Folio" HorizontalAlignment="Right" Margin="0,40.05,89.439,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cbserie" Margin="0,44.05,130.172,0" HorizontalAlignment="Right" VerticalAlignment="Top" Width="62"/>
+        <Label x:Name="label_Copy13" Content="Serie" HorizontalAlignment="Right" Margin="0,40.05,197.172,0" VerticalAlignment="Top"/>
+        <GroupBox x:Name="groupBox2" Header="Datos Factura" Margin="10,218.343,10,0" Height="95" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy14" Content="Método de Pago" HorizontalAlignment="Left" Margin="14.517,245.09,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.906,1.311"/>
+        <ComboBox x:Name="cbmetodopago" HorizontalAlignment="Left" Margin="14.517,271.05,0,0" Width="244.95" VerticalAlignment="Top">
+            <ComboBoxItem Content="01-Efectivo" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="02-Cheque nominativo" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="03-Transferencia electronica de fondos" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="04-Tarjeta de credito" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="05-Monedero electronico" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="06-Dinero electronico" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="08-Vales de despensa" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="28-Tarjeta de debito" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="29-Tarjeta de servicio" HorizontalAlignment="Left" Width="242"/>
+            <ComboBoxItem Content="99-Otros" HorizontalAlignment="Left" Width="242"/>
+        </ComboBox>
+        <Label x:Name="label_Copy15" Content="Cuenta de Pago" HorizontalAlignment="Left" Margin="264.517,245.09,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtcuentapago" Height="23" Margin="264.517,271.05,0,0" TextWrapping="Wrap" VerticalAlignment="Top" HorizontalAlignment="Left" Width="120"/>
+        <Label x:Name="label_Copy16" Content="Lugar de Expedicíon" HorizontalAlignment="Left" Margin="389.517,245.09,0,0" VerticalAlignment="Top" d:LayoutOverrides="HorizontalAlignment"/>
+        <TextBox x:Name="txtlugarexpedicion" Height="23" Margin="389.517,271.05,387.533,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy17" Content="Tipo de Pago" HorizontalAlignment="Right" Margin="0,245.09,302.825,0" VerticalAlignment="Top" RenderTransformOrigin="3.906,1.311"/>
+        <ComboBox x:Name="txttipopago" HorizontalAlignment="Right" Margin="0,272.09,187.482,0" Width="195.05" VerticalAlignment="Top"/>
+        <DataGrid x:Name="dgconceptos" Margin="10,453,10,95" CanUserReorderColumns="False" CanUserSortColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Cantidad" Width="70"/>
+                <DataGridTextColumn Header="Unidad" Width="70"/>
+                <DataGridTextColumn Header="Código" Width="100"/>
+                <DataGridTextColumn Header="Descripción" Width="480"/>
+                <DataGridTextColumn Header="Precio" Width="100"/>
+                <DataGridTextColumn Header="Descuento" Width="80"/>
+                <DataGridTextColumn Header="Importe" Width="100"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBox x:Name="txtiva" HorizontalAlignment="Left" Height="23" Margin="729,679,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txttotal" HorizontalAlignment="Left" Height="23" Margin="892,679,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtsubtotal" HorizontalAlignment="Left" Height="23" Margin="545,679,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextChanged="textBox1_Copy1_TextChanged"/>
+        <Label x:Name="label1" Content="Subtotal" HorizontalAlignment="Left" Margin="486,679,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy" Content="IVA 16%" HorizontalAlignment="Left" Margin="670,676,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1_Copy1" Content="Total" HorizontalAlignment="Left" Margin="852,676,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="Cantidad" HorizontalAlignment="Left" Margin="14,381,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtcantidad" HorizontalAlignment="Left" Height="23" Margin="14,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72"/>
+        <Label x:Name="label2_Copy" Content="Unidad" HorizontalAlignment="Left" Margin="226,331,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="label2_Copy1" Content="Código" HorizontalAlignment="Left" Margin="15,331,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtcodigo" HorizontalAlignment="Left" Height="23" Margin="15,357,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="152"/>
+        <Label x:Name="label2_Copy2" Content="Descripción" HorizontalAlignment="Left" Margin="91,382,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtdescripcion" HorizontalAlignment="Left" Height="23" Margin="91,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="526"/>
+        <Label x:Name="label2_Copy3" Content="Precio" HorizontalAlignment="Left" Margin="622,381,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtprecio" HorizontalAlignment="Left" Height="23" Margin="622,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="label2_Copy4" Content="Descuento" HorizontalAlignment="Left" Margin="729,381,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtdescuento" HorizontalAlignment="Left" Height="23" Margin="727,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88"/>
+        <Label x:Name="label2_Copy5" Content="Importe" HorizontalAlignment="Left" Margin="820,382,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="txtimporte" HorizontalAlignment="Left" Height="23" Margin="820,407,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100"/>
+        <ComboBox x:Name="cbpais" HorizontalAlignment="Left" Margin="14,118,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="cbestado" HorizontalAlignment="Left" Margin="139,118,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtunidad" HorizontalAlignment="Left" Height="23" Margin="226,356,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116"/>
+        <Button x:Name="btnagregar" Content="Agregar" HorizontalAlignment="Left" Margin="939,407,0,0" VerticalAlignment="Top" Width="60" Height="23" AllowDrop="True" Background="#FFDDDDDD"/>
+        <Button x:Name="btnbuscar" Content="Buscar" HorizontalAlignment="Left" Margin="172,356,0,0" VerticalAlignment="Top" Width="47" Height="24"/>
+        <Button x:Name="button" Content="Crear CFDI" HorizontalAlignment="Left" Margin="915,717,0,0" VerticalAlignment="Top" Width="97" Height="39"/>
+    </Grid>
+</UserControl>
